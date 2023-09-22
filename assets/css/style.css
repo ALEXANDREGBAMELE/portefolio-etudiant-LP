@@ -18,8 +18,26 @@
     height: 70vh;
     width: 95vh;
 }
+
+.img-contact{
+    height: 100vh;
+    width: 100vh;
+    
+}
+.background-contact{
+    background-image: url('../img/service-clientele-equipe-agents-du-centre-appels-support-portant-casque-casque-parlant-client.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
 .content-banniere{
     left: -12rem !important;
-   
     position: relative;
+}
+
+.projet-border{
+    
+    margin: 8px 0px 8px 0px;
+    padding: 5px;
+    border-radius: 15px;
 }
