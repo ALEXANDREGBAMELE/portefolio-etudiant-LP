@@ -5,25 +5,25 @@
     height: 350px;
     
 }
-.card-w{
-    width: 7.5rem;
-    text-align: center;
-    font-weight: bold;
+
+.fa-regular{
+    font-size: 50px;
+    margin-bottom: 10px;
 }
-/* .bienvenu{
-    font-size: 60px;
-    color: rgb(142, 140, 140);
-} */
 
 .about-img{
     height: 70vh;
     width: 95vh;
 }
 
-.img-contact{
-    height: 100vh;
-    width: 100vh;
-    
+.card-w{
+    width: 110px;
+    text-align: center;
+}
+
+.card-w:hover{
+    border-color: rgb(19, 158, 111);
+    border-bottom: 3px rgb(19, 158, 111) solid;
 }
 
 .content-banniere{
