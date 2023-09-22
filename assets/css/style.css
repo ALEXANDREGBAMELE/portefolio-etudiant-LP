@@ -2,7 +2,7 @@
     background-image: url('../img/4401280.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right;
+    
 }
 .card-w{
     width: 7.5rem;
@@ -24,12 +24,7 @@
     width: 100vh;
     
 }
-.background-contact{
-    background-image: url('../img/service-clientele-equipe-agents-du-centre-appels-support-portant-casque-casque-parlant-client.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
-}
+
 .content-banniere{
     left: -12rem !important;
     position: relative;

@@ -33,6 +33,10 @@
     <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
     <meta name="theme-color" content="#712cf9">
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+
 
     <!-- Custom styles for this template -->
     <link href="product.css" rel="stylesheet">
@@ -40,57 +44,27 @@
 
 <body>
 
-    <!-- <nav class="navbar navbar-expand-md  sticky-top border-bottom text-white">
-        <div class=" container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
-            aria-controls="#offcanvas" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="#offcanvasLabel">Aperture</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item me-auto">
-                        <a class="nav-link" href="#">
-                            <img src="./assets/img/1680022852951.jpeg" class="rounded-circle" alt="photo de profil"
-                                height="40">
-                        </a></li>
-
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-navbar" tabindex="-1">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-5" href="#"><img src="./assets/img/1680022852951.jpeg" class="rounded-circle"
+                    alt="photo de profil" height="40"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-navbar mb-2 mb-lg-0">
                     <li class="nav-item card card-w m-1"><a class="nav-link" href="#">Accueil</a></li>
                     <li class="nav-item card card-w m-1"><a class="nav-link" href="#">A Propos</a></li>
                     <li class="nav-item card card-w m-1"><a class="nav-link" href="#">Projet</a></li>
                     <li class="nav-item card card-w m-1"><a class="nav-link" href="#">Compétence</a></li>
                     <li class="nav-item card card-w m-1"><a class="nav-link" href="#">Blog</a></li>
                     <li class="nav-item card card-w m-1"><a class="nav-link" href="/contact.html">Contact</a></li>
-
-                    </a></li>
                 </ul>
             </div>
         </div>
-        </div>
-    </nav> -->
-
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-navbar" tabindex="-1">
-        <div class="container-fluid">
-          <a class="navbar-brand ms-5" href="#"><img src="./assets/img/1680022852951.jpeg" class="rounded-circle" alt="photo de profil" height="40"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-navbar mb-2 mb-lg-0">
-                <li class="nav-item card card-w m-1"><a class="nav-link" href="#">Accueil</a></li>
-                <li class="nav-item card card-w m-1"><a class="nav-link" href="#">A Propos</a></li>
-                <li class="nav-item card card-w m-1"><a class="nav-link" href="#">Projet</a></li>
-                <li class="nav-item card card-w m-1"><a class="nav-link" href="#">Compétence</a></li>
-                <li class="nav-item card card-w m-1"><a class="nav-link" href="#">Blog</a></li>
-                <li class="nav-item card card-w m-1"><a class="nav-link" href="/contact.html">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    </nav>
 
     <main>
         <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center ">
@@ -107,7 +81,9 @@
                     </div>
                 </div>
                 <div class="col-md-4 banniere ">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis similique et optio quos voluptatum provident qui dolorem recusandae molestiae nemo sapiente, voluptatem tempore consectetur? Molestiae corporis eum sint nisi tempore!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis similique et optio quos voluptatum
+                        provident qui dolorem recusandae molestiae nemo sapiente, voluptatem tempore consectetur?
+                        Molestiae corporis eum sint nisi tempore!</p>
                 </div>
             </div>
             <div class="product-device shadow-sm d-none d-md-block"></div>
@@ -190,67 +166,67 @@
     <!-- project end here -->
 
     <!-- project section start here -->
-  <div class="container">
-    <div class="text-center p-lg-5">
-        <h4>Projet</h4>
+    <div class="container">
+        <div class="text-center p-lg-5">
+            <h4>Projet</h4>
+        </div>
+
+        <div class="row d-flex projet-border">
+            <div class="col-md-6">
+                <img class="img-fluid" src="./assets/img/personne-devant-ordinateur-travaillant-html.jpg" alt="">
+            </div>
+            <div class="col-md-6 p-4 text-center">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit placeat pariatur ut tempora
+                    est
+                    officiis eum soluta maiores ad cupiditate facilis nobis tenetur aut non, natus mollitia incidunt
+                    voluptatum?</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt molestiae esse fugiat magnam beatae
+                    necessitatibus velit dolorem perspiciatis repellendus voluptate suscipit aut a libero consequuntur
+                    iste,
+                    mollitia numquam sit veniam.</p><br>
+
+                <div class="btn btn-success">Savoir Plus</div>
+            </div>
+
+        </div>
+
+        <div class="row d-flex projet-border">
+            <div class="col-md-6 p-4 text-center">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit placeat pariatur ut tempora
+                    est
+                    officiis eum soluta maiores ad cupiditate facilis nobis tenetur aut non, natus mollitia incidunt
+                    voluptatum?</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt molestiae esse fugiat magnam beatae
+                    necessitatibus velit dolorem perspiciatis repellendus voluptate suscipit aut a libero consequuntur
+                    iste,
+                    mollitia numquam sit veniam.</p><br>
+
+                <div class="btn btn-success">Savoir Plus</div>
+            </div>
+            <div class="col-md-6">
+                <img class="img-fluid" src="./assets/img/personne-devant-ordinateur-travaillant-html.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="row d-flex projet-border">
+            <div class="col-md-6">
+                <img class="img-fluid" src="./assets/img/personne-devant-ordinateur-travaillant-html.jpg" alt="">
+            </div>
+            <div class="col-md-6 p-4 text-center">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit placeat pariatur ut tempora
+                    est
+                    officiis eum soluta maiores ad cupiditate facilis nobis tenetur aut non, natus mollitia incidunt
+                    voluptatum?</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt molestiae esse fugiat magnam beatae
+                    necessitatibus velit dolorem perspiciatis repellendus voluptate suscipit aut a libero consequuntur
+                    iste,
+                    mollitia numquam sit veniam.</p><br>
+
+                <div class="btn btn-success">Savoir Plus</div>
+            </div>
+
+        </div>
     </div>
-
-    <div class="row d-flex projet-border">
-        <div class="col-md-6">
-            <img class="img-fluid" src="./assets/img/personne-devant-ordinateur-travaillant-html.jpg" alt="">
-        </div>
-        <div class="col-md-6 p-4 text-center">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit placeat pariatur ut tempora
-                est
-                officiis eum soluta maiores ad cupiditate facilis nobis tenetur aut non, natus mollitia incidunt
-                voluptatum?</p><br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt molestiae esse fugiat magnam beatae
-                necessitatibus velit dolorem perspiciatis repellendus voluptate suscipit aut a libero consequuntur
-                iste,
-                mollitia numquam sit veniam.</p><br>
-
-            <div class="btn btn-success">Savoir Plus</div>
-        </div>
-
-    </div>
-
-    <div class="row d-flex projet-border">
-        <div class="col-md-6 p-4 text-center">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit placeat pariatur ut tempora
-                est
-                officiis eum soluta maiores ad cupiditate facilis nobis tenetur aut non, natus mollitia incidunt
-                voluptatum?</p><br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt molestiae esse fugiat magnam beatae
-                necessitatibus velit dolorem perspiciatis repellendus voluptate suscipit aut a libero consequuntur
-                iste,
-                mollitia numquam sit veniam.</p><br>
-
-            <div class="btn btn-success">Savoir Plus</div>
-        </div>
-        <div class="col-md-6">
-            <img class="img-fluid" src="./assets/img/personne-devant-ordinateur-travaillant-html.jpg" alt="">
-        </div>
-    </div>
-
-    <div class="row d-flex projet-border">
-        <div class="col-md-6">
-            <img class="img-fluid" src="./assets/img/personne-devant-ordinateur-travaillant-html.jpg" alt="">
-        </div>
-        <div class="col-md-6 p-4 text-center">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit placeat pariatur ut tempora
-                est
-                officiis eum soluta maiores ad cupiditate facilis nobis tenetur aut non, natus mollitia incidunt
-                voluptatum?</p><br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt molestiae esse fugiat magnam beatae
-                necessitatibus velit dolorem perspiciatis repellendus voluptate suscipit aut a libero consequuntur
-                iste,
-                mollitia numquam sit veniam.</p><br>
-
-            <div class="btn btn-success">Savoir Plus</div>
-        </div>
-
-    </div>
-  </div>
     <!-- project section end here -->
 
     <!-- competence section start here -->
@@ -258,30 +234,47 @@
         <h4>Competence</h4>
     </div>
     <div class="container">
-        <div class="d-flex mb-4">
-            <div class="card text-center p-5 ms-2 me-2">
-                <i class="fa-solid fa-user"></i>
-                <div class="item  card-w">JAVA</div>
+        <div class="row d-flex">
+            <div class="col-md-2 m-2">
+                <div class="card text-center p-5 ms-2 me-2">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="item  card-w">JAVA</div>
+                </div>
             </div>
 
-            <div class="card text-center p-5 ms-2 me-2">
-                <i class="fa-solid fa-user"></i>
-                <div class="item  card-w ">PYTHON</div>
+            <div class="col-md-2 m-2">
+                <div class="card text-center p-5 ms-2 me-2">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="item  card-w">JAVA</div>
+                </div>
             </div>
 
-            <div class="card text-center p-5 ms-2 me-2">
-                <i class="fa-solid fa-user"></i>
-                <div class="item  card-w">JAVASCRIPT</div>
+            <div class="col-md-2 m-2">
+                <div class="card text-center p-5 ms-2 me-2">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="item  card-w">JAVA</div>
+                </div>
             </div>
 
-            <div class="card text-center p-5 ms-2 me-2">
-                <i class="fa-solid fa-user"></i>
-                <div class="item  card-w">HTML</div>
+            <div class="col-md-2 m-2">
+                <div class="card text-center p-5 ms-2 me-2">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="item  card-w">JAVA</div>
+                </div>
             </div>
 
-            <div class="card text-center p-5 ms-2 me-2">
-                <i class="fa-solid fa-user"></i>
-                <div class="item  card-w">CSS</div>
+            <div class="col-md-2 m-2">
+                <div class="card text-center p-5 ms-2 me-2">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="item  card-w">JAVA</div>
+                </div>
+            </div>
+
+            <div class="col-md-2 m-2">
+                <div class="card text-center p-5 ms-2 me-2">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="item  card-w">JAVA</div>
+                </div>
             </div>
         </div>
     </div>
@@ -348,43 +341,65 @@
                     <div class=" p-lg-5">
                         <h1>Contactez-nous</h1>
                     </div>
-                    <form action="">
+                    <form action="" class="">
+                        <div class="row d-flex">
+                            <div class="col-md-6">
+                                <div class="group gap-5 p-3">
+                                    <div class="sous-group">
+                                        <label for="">Nom :</label><br><br>
+                                        <input class="form-control" type="text" name="" id="">
+                                    </div>
 
 
-                        <div class="group d-flex gap-5 p-3">
-                            <div class="sous-group">
-                                <label for="">Nom :</label><br><br>
-                                <input class="form-control-lg" type="text" name="" id="">
+                                    <div class="sous-group">
+                                        <label for="">Prenom : </label><br><br>
+                                        <input class="form-control" type="text" name="" id="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="group gap-5 p-3">
+                                    <div class="sous-group">
+                                        <label for="">E-mail :</label><br><br>
+                                        <input class="form-control" type="text" name="" id="">
+                                    </div>
+
+
+                                    <div class="sous-group">
+                                        <label for="">Telephone : </label><br><br>
+                                        <input class="form-control" type="text" name="" id="">
+                                    </div>
+
+                                    <div class="btn-submit p-3">
+                                        <input class="btn btn-success form-control" value="Envoyer" type="text" name=""
+                                            id="">
+                                    </div>
+                                </div>
                             </div>
 
 
-                            <div class="sous-group">
-                                <label for="">Prenom : </label><br><br>
-                                <input class="form-control-lg" type="text" name="" id="">
-                            </div>
-                        </div>
-
-                        <div class="group d-flex gap-5 p-3">
-                            <div class="sous-group">
-                                <label for="">E-mail :</label><br><br>
-                                <input class="form-control-lg" type="text" name="" id="">
-                            </div>
 
 
-                            <div class="sous-group">
-                                <label for="">Telephone : </label><br><br>
-                                <input class="form-control-lg" type="text" name="" id="">
-                            </div>
-                        </div>
-
-
-                        <div class="btn-submit p-3">
-                            <input class="btn btn-success form-control-lg" value="Envoyer" type="text" name="" id="">
                         </div>
 
                     </form>
                 </div>
                 <div class="col-md-5 background-contact">
+                    <div id="maCarte" style="width: 100%; height: 400px;"></div>
+
+                    <script>
+                        var mymap = L.map('maCarte').setView([51.505, -0.09], 13);
+                    
+                        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            maxZoom: 19,
+                        }).addTo(mymap);
+                    
+                        L.marker([51.5, -0.09]).addTo(mymap)
+                            .bindPopup('Alexandre Gbamele Service')
+                            .openPopup();
+                    </script>
+                    
                     <!-- <img src="./assets/img/service-clientele-equipe-agents-du-centre-appels-support-portant-casque-casque-parlant-client.jpg" class="img-contact" alt=""> -->
                 </div>
             </div>
