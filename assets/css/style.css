@@ -1,0 +1,25 @@
+.banniere{
+    background-image: url('../img/4401280.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+.card-w{
+    width: 7.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+/* .bienvenu{
+    font-size: 60px;
+    color: rgb(142, 140, 140);
+} */
+
+.about-img{
+    height: 70vh;
+    width: 95vh;
+}
+.content-banniere{
+    left: -12rem !important;
+   
+    position: relative;
+}
