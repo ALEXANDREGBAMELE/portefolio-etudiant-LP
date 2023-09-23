@@ -81,7 +81,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 banniere ">
-                    
+
                 </div>
             </div>
             <div class="product-device shadow-sm d-none d-md-block"></div>
@@ -301,7 +301,8 @@
             </div>
             <div class="col-md-4">
                 <div class="card text-center p-3">
-                    <img src="./assets/img/Man and robot with computers sitting together in workplace.jpg" alt="image du blog" height="200">
+                    <img src="./assets/img/Man and robot with computers sitting together in workplace.jpg"
+                        alt="image du blog" height="200">
                     <h3 class="p-2">Inteligence Artificiel</h3>
                     <div class="content">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sequi tenetur at nihil ipsa
@@ -345,13 +346,13 @@
                                 <div class="group gap-5 p-3">
                                     <div class="sous-group mb-4">
                                         <label for="">Nom :</label><br>
-                                        <input class="form-control" type="text" name="" id="">
+                                        <input class="form-control" type="text" name="nom" id="nom">
                                     </div>
 
 
                                     <div class="sous-group">
                                         <label for="">Prenom : </label><br>
-                                        <input class="form-control" type="text" name="" id="">
+                                        <input class="form-control" type="text" name="prenom" id="prenom">
                                     </div>
                                 </div>
                             </div>
@@ -360,44 +361,29 @@
                                 <div class="group gap-5 p-3">
                                     <div class="sous-group mb-4">
                                         <label for="">E-mail :</label><br>
-                                        <input class="form-control" type="text" name="" id="">
+                                        <input class="form-control" type="text" name="" id="email">
                                     </div>
 
 
                                     <div class="sous-group">
                                         <label for="">Telephone : </label><br>
-                                        <input class="form-control" type="text" name="" id="">
+                                        <input class="form-control" type="text" name="" id="telephone">
                                     </div>
 
                                     <div class="btn-submit p-3">
-                                        <input class="btn btn-success form-control" value="Envoyer" type="text" name=""
-                                            id="">
+                                        <input class="btn btn-success form-control" value="Envoyer" type="text"
+                                            name="submit" id="submit" onclick="afficherValeur()">
                                     </div>
                                 </div>
                             </div>
-
-
-
-
                         </div>
-
                     </form>
                 </div>
                 <div class="col-md-5 background-contact">
                     <div id="maCarte" style="width: 100%; height: 400px;"></div>
 
-                    <script>
-                        var mymap = L.map('maCarte').setView([51.505, -0.09], 13);
-                    
-                        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                            maxZoom: 19,
-                        }).addTo(mymap);
-                    
-                        L.marker([51.5, -0.09]).addTo(mymap)
-                            .bindPopup('Alexandre Gbamele Service')
-                            .openPopup();
-                    </script>
-                    
+
+
                     <!-- <img src="./assets/img/service-clientele-equipe-agents-du-centre-appels-support-portant-casque-casque-parlant-client.jpg" class="img-contact" alt=""> -->
                 </div>
             </div>
@@ -459,7 +445,8 @@
         </div>
     </footer>
     <script src="./assets/js/bootstrap.bundle.js"></script>
-    <script src="./assets/js/.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script-map.js"> </script>
 </body>
 
 </html>
