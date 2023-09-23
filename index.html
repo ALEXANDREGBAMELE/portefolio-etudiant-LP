@@ -1,9 +1,7 @@
 <!doctype html>
-<html lang="en" data-bs-theme="auto">
+<html lang="fr" data-bs-theme="auto">
 
 <head>
-    <script src="/docs/5.3/assets/js/color-modes.js"></script>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -11,35 +9,20 @@
     <meta name="generator" content="Hugo 0.118.2">
     <title>Alexandre Gbamele</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/product/">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/fontawesome.min.css">
 
 
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-
-    <link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
     <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
     <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
-    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
     <meta name="theme-color" content="#712cf9">
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
-
-
-    <!-- Custom styles for this template -->
-    <link href="product.css" rel="stylesheet">
 </head>
 
 <body>
@@ -56,11 +39,11 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-navbar mb-2 mb-lg-0">
                     <li class="nav-item card card-w m-1"><a class="nav-link" href="#">Accueil</a></li>
-                    <li class="nav-item card card-w m-1"><a class="nav-link" href="#">A Propos</a></li>
-                    <li class="nav-item card card-w m-1"><a class="nav-link" href="#">Projet</a></li>
-                    <li class="nav-item card card-w m-1"><a class="nav-link" href="#">Compétence</a></li>
-                    <li class="nav-item card card-w m-1"><a class="nav-link" href="#">Blog</a></li>
-                    <li class="nav-item card card-w m-1"><a class="nav-link" href="/contact.html">Contact</a></li>
+                    <li class="nav-item card card-w m-1"><a class="nav-link" href="#a-propos">A Propos</a></li>
+                    <li class="nav-item card card-w m-1"><a class="nav-link" href="#projet">Projet</a></li>
+                    <li class="nav-item card card-w m-1"><a class="nav-link" href="#competence">Compétence</a></li>
+                    <li class="nav-item card card-w m-1"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item card card-w m-1"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -74,7 +57,7 @@
                         <h1 class="display-4 fw-bold">N'Goran Alexandre GBAMELE</h1>
                         <h3 class="fw-normal text-muted mb-3">Developpeur web et mobile</h3>
                         <div class="d-flex gap-3 justify-content-center lead fw-normal">
-                            <a class="icon-link btn btn-success" href="#">
+                            <a class="icon-link btn btn-success" href="#a-propos">
                                 A Propos
                             </a>
                         </div>
@@ -91,7 +74,7 @@
 
     <!-- about me start here -->
     <div class="container">
-        <div class="text-center">
+        <div class="text-center" id="a-propos">
             <h4>A Propos</h4>
         </div>
         <div class="bienvenu text-center display-5 fw-bold p-lg-5">Heureux de vous accueillir <br> sur ma page</div>
@@ -107,10 +90,10 @@
                     iste,
                     mollitia numquam sit veniam.</p><br>
 
-                <div class="btn btn-success">Me Contacter</div>
+                    <a href="#contact"><div class="btn btn-success">Me Contacter</div></a>
             </div>
             <div class="col-md-6">
-                <img class="img-fluid" src="./assets/img/personne-devant-ordinateur-travaillant-html.jpg" alt="">
+                <img class="img-fluid" src="./assets/img/1680022852951.jpeg" alt="">
             </div>
         </div>
     </div>
@@ -164,12 +147,12 @@
     <!-- project end here -->
 
     <!-- project section start here -->
-    <div class="container">
+    <div class="container" id="projet">
         <div class="text-center p-lg-5">
             <h4>Projet</h4>
         </div>
 
-        <div class="row d-flex projet-border">
+        <div class="row  projet-border featurette">
             <div class="col-md-6">
                 <img class="img-fluid" src="./assets/img/personne-devant-ordinateur-travaillant-html.jpg" alt="">
             </div>
@@ -188,8 +171,8 @@
 
         </div>
 
-        <div class="row d-flex projet-border">
-            <div class="col-md-6 p-4 text-center">
+        <div class="row  projet-border featurette">
+            <div class="col-md-6 order-md-2 p-4 text-center">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit placeat pariatur ut tempora
                     est
                     officiis eum soluta maiores ad cupiditate facilis nobis tenetur aut non, natus mollitia incidunt
@@ -201,12 +184,12 @@
 
                 <div class="btn btn-success">Savoir Plus</div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 order-md-1">
                 <img class="img-fluid" src="./assets/img/personne-devant-ordinateur-travaillant-html.jpg" alt="">
             </div>
         </div>
 
-        <div class="row d-flex projet-border">
+        <div class="row  projet-border featurette">
             <div class="col-md-6">
                 <img class="img-fluid" src="./assets/img/personne-devant-ordinateur-travaillant-html.jpg" alt="">
             </div>
@@ -228,7 +211,7 @@
     <!-- project section end here -->
 
     <!-- competence section start here -->
-    <div class="text-center p-lg-5">
+    <div class="text-center p-lg-5" id="competence">
         <h4>Competence</h4>
     </div>
     <div class="container">
@@ -281,7 +264,7 @@
     <!-- blog section start here -->
     <div class="container">
 
-        <div class="text-center p-lg-5">
+        <div class="text-center p-lg-5" id="blog">
             <h4 class="">Blog</h4>
         </div>
 
@@ -290,24 +273,34 @@
                 <div class="card text-center p-3">
                     <img src="./assets/img/THANIT~1.JPG" alt="image du blog" height="200">
                     <h3 class="p-2">Internet des objets connectés</h3>
-                    <div class="content">
-                        Lorem adipisicing e Rerum sequi tenetur at nihil ipsa
-                        minima dolorum laboriosam dolorum laboriosam impedit in! Ullam nobis itaque ad obcaecati hic
-                        repudiandae illum
+                    <div class="card-body" id="texte-limite">
+                        L'Internet des objets (IoT) est un réseau d'objets et de terminaux connectés équipés de capteurs (et d'autres technologies) leur permettant de transmettre et de recevoir des données entre eux et avec d'autres systèmes. Aujourd'hui, l'IoT est utilisé de manière intensive dans l'industrie (IIoT).
 
                     </div>
                     <div class="btn text-success mt-3">Lire plus...</div>
                 </div>
             </div>
+
+            <script>
+                var texte = document.getElementById('texte-limite');
+                var texteComplet = texte.innerHTML;
+                var limiteCaracteres = 200;
+            
+                if (texteComplet.length > limiteCaracteres) {
+                    var texteCoupe = texteComplet.substring(0, limiteCaracteres) + '...';
+                    texte.innerHTML = texteCoupe;
+                }
+            </script>
+
+
+
             <div class="col-md-4">
                 <div class="card text-center p-3">
                     <img src="./assets/img/Man and robot with computers sitting together in workplace.jpg"
                         alt="image du blog" height="200">
                     <h3 class="p-2">Inteligence Artificielle</h3>
-                    <div class="content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sequi tenetur at nihil ipsa
-                        minima dolorum laboriosam impedit in! Ullam nobis itaque ad obcaecati hic repudiandae illum
-                        velit dolores architecto?
+                    <div class="card-body texte-limite">
+                        L'intelligence artificielle est un ensemble de théories et de techniques visant à réaliser des machines capables de simuler l'intelligence humaine. Souvent classée dans le groupe des mathématiques et des sciences cognitives, elle fait appel à la neurobiologie computationnelle et à la logique mathématique.
                     </div>
                     <div class="btn text-success mt-3">Lire plus...</div>
                 </div>
@@ -316,10 +309,8 @@
                 <div class="card text-center p-3">
                     <img src="./assets/img/optimization_set_3.jpg" alt="image du blog" height="200">
                     <h3 class="p-2">Data Analysis</h3>
-                    <div class="content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sequi tenetur at nihil ipsa
-                        minima dolorum laboriosam impedit in! Ullam nobis itaque ad obcaecati hic repudiandae illum
-                        velit dolores architecto?
+                    <div class="card-body texte-limite">
+                        L’analyse des données est une famille de méthodes statistiques dont les principales caractéristiques sont d'être multidimensionnelles et descriptives. Dans l'acception française, la terminologie « analyse des données » désigne donc un sous-ensemble de ce qui est appelé plus généralement la statistique 
                     </div>
                     <div class="btn text-success mt-3">Lire plus...</div>
                 </div>
@@ -337,22 +328,23 @@
 
             <div class="row mt-3">
                 <div class="col-md-7 bg-dark text-white rounded-top">
-                    <div class=" p-lg-5">
+                    <div class=" p-lg-5" id="contact">
                         <h1>Contactez-nous</h1>
                     </div>
-                    <form action="" class="">
+                    <form  class="formulaire" id="formulaire">
                         <div class="row d-flex">
                             <div class="col-md-6">
                                 <div class="group gap-5 p-3">
                                     <div class="sous-group mb-4">
                                         <label for="">Nom :</label><br>
-                                        <input class="form-control" type="text" name="nom" id="nom">
+                                        <input class="form-control" type="text" name="nom" id="nom" required>
+                                        <div id="messageNom" class="message-erreur" style="color: red;"></div>
                                     </div>
 
 
                                     <div class="sous-group">
                                         <label for="">Prenom : </label><br>
-                                        <input class="form-control" type="text" name="prenom" id="prenom">
+                                        <input class="form-control" type="text" name="prenom" id="prenom" required>
                                     </div>
                                 </div>
                             </div>
@@ -372,7 +364,7 @@
 
                                     <div class="btn-submit p-3">
                                         <input class="btn btn-success form-control" value="Envoyer" type="text"
-                                            name="submit" id="submit" onclick="afficherValeur()">
+                                            name="submit" id="boutton">
                                     </div>
                                 </div>
                             </div>
@@ -392,30 +384,15 @@
     <!-- contact section end here -->
 
     <footer class="container-fluid py-5 bg-dark">
-        <div class="row">
-            <div class="col-12 col-md">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img"
-                    viewBox="0 0 24 24">
-                    <title>Product</title>
-                    <circle cx="12" cy="12" r="10" />
-                    <path
-                        d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
-                </svg>
-                <small class="d-block mb-3 text-body-secondary">&copy; 2017–2023</small>
+        
+        <div class="row p-5">
+            <div class="col-md-5 mt-5">
+                <!-- <h5>Features</h5> -->
+                <div><a class="link-secondary text-decoration-none" href="#"><i class="fa-solid fa-phone fs-3"></i> (+225 07 07 19 35 07)</a></div>
+                <div class="mt-3"><a class="link-secondary text-decoration-none" href="#"><i class="fa-regular fa-envelope fs-3"></i> gbamelealexandre02@gmail.com</a></div>     
             </div>
-            <div class="col-6 col-md">
-                <h5>Features</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
-                    <li><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
-                    <li><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
-                    <li><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
-                    <li><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
-                    <li><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-md">
+
+            <div class="col-md-2">
                 <h5>Resources</h5>
                 <ul class="list-unstyled text-small">
                     <li><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
@@ -424,7 +401,7 @@
                     <li><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-md">
+            <div class="col-md-2">
                 <h5>Resources</h5>
                 <ul class="list-unstyled text-small">
                     <li><a class="link-secondary text-decoration-none" href="#">Business</a></li>
@@ -433,16 +410,17 @@
                     <li><a class="link-secondary text-decoration-none" href="#">Gaming</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-md">
-                <h5>About</h5>
+            <div class="col-md-3">
+                <h5 class="text-white">Rejoingnez-nous</h5>
                 <ul class="list-unstyled text-small">
-                    <li><a class="link-secondary text-decoration-none" href="#">Team</a></li>
-                    <li><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
-                    <li><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
-                    <li><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn </a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="https://github.com/ALEXANDREGBAMELE/" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
                 </ul>
             </div>
         </div>
+        
     </footer>
     <script src="./assets/js/bootstrap.bundle.js"></script>
     <script src="./assets/js/script.js"></script>
