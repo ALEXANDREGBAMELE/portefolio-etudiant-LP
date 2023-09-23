@@ -55,5 +55,29 @@ boutton.addEventListener('submit', function(event){
 // }
 
 
+// reduire les text dans les blog
+
+// Sélectionnez tous les éléments ayant la classe "texte-limite"
+var elements = document.getElementsByClassName("texte-limite");
+var limiteCaracteres = 200;
+
+// Parcourez chaque élément ayant la classe "texte-limite"
+for (var i = 0; i < elements.length; i++) {
+    var element = elements[i];
+    var texteComplet = element.innerHTML;
+
+    // Vérifiez si le texte dépasse la limite de caractères
+    if (texteComplet.length > limiteCaracteres) {
+        var texteCoupe = texteComplet.substring(0, limiteCaracteres) + '...';
+        element.innerHTML = texteCoupe;
+    }
+}
+
+
+
+
+
+
+
 
 
